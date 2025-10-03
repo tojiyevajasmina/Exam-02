@@ -24,10 +24,10 @@ calculate(7, 4, "^")     # Error: Noto'g'ri operator
 
 ## **Masala 2: Simple ATM Simulation**
 
-**Funksiya**: `atm_operation(balance: int, action: str, amount: int = 0) -> dict`
+**Funksiya**: `atm_operation(balance: int, action: str, amount: int) -> dict`
 
 **Talab**:
-- 3 ta amal: `deposit`, `withdraw`, `balance`
+- 3 ta amal: `deposit`, `withdraw`
 - Withdraw uchun balans yetarli emasligini tekshiring
 - Manfiy summa kiritsa xato qaytaring
 - Natija: `balance`
@@ -36,7 +36,7 @@ calculate(7, 4, "^")     # Error: Noto'g'ri operator
 ```python
 atm_operation(100000, "deposit", 50000) # 150000
 
-atm_operation(100000, "balance") # 100000
+atm_operation(100000, "withdraw", 20000) # 80000
 ```
 
 ---
